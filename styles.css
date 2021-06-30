@@ -1,0 +1,198 @@
+body {
+  background-image: url(img/backgroundImg.jpg);
+  background-size: cover;
+  font-family: "Vollkorn", serif;
+}
+
+.headerTitle {
+  font-size: 5rem;
+  color: rgb(248, 212, 144);
+}
+
+.section1 {
+  background-color: rgba(31, 8, 8, 0.5);
+  background-size: cover;
+  height: max-content;
+}
+.navbar {
+  background: rgb(
+    61,
+    58,
+    58
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(243, 239, 239, 0.5);
+}
+
+.fa-github,
+.fa-linkedin-in {
+  color: rgb(22, 33, 62);
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: transparent;
+}
+
+.fab:hover {
+  color: wheat;
+}
+
+.empty-sm {
+  height: 5rem;
+}
+
+.immunizedNumber,
+.herdImmunityNumber {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.window {
+  border-radius: 5px;
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-bottom: 10vh;
+  background: rgba(22, 33, 62, 0.9);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+}
+.resultShow {
+  color: white;
+  border-radius: 5px;
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-bottom: 10vh;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+}
+
+.header {
+  color: white;
+  text-align: center;
+}
+
+.headerDate {
+  color: wheat;
+  text-align: center;
+}
+
+.dateForm {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.dateInput {
+  text-align: center;
+}
+
+#submitButton {
+  border: solid;
+}
+
+.results {
+  color: white;
+  margin-right: 100px;
+}
+
+.result_1 {
+  margin-top: 20px;
+}
+
+.numberFont1 {
+  font-family: "Trochut", cursive;
+  color: wheat;
+}
+
+.information {
+  color: rgb(177, 170, 170);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bottomEnd {
+  background-color: grey;
+  box-sizing: content-box;
+}
+
+#submitButton {
+  border-radius: 20px;
+}
+
+.accumulatedSecondShot {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.progress {
+  background-color: #a7bbc7;
+  color: #fff;
+  box-shadow: inset 0 1px 1px rgba(100, 100, 100, 0.1);
+  box-sizing: initial;
+  color: #fff;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  height: 12px;
+  line-height: 1.182;
+  margin: 6px 0;
+  position: relative;
+  text-align: center;
+  width: 70%;
+}
+
+.progress > span {
+  background-color: #ff0000;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.progress-striped > span:after,
+.progress-striped > span > span {
+  background-size: 50px 50px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.progress-striped.progress-animate > span:after,
+.progress-striped.progress-animate > span > span {
+  -webkit-animation: move 2s linear infinite;
+  animation: move 2s linear infinite;
+}
+
+.herdImmunity,
+.totalImmunization {
+  color: wheat;
+}
+
+.section2 {
+  background-color: rgba(62, 96, 100, 0.95);
+}
+
+.fa-users,
+.fa-user-shield {
+  color: #eadea6;
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: transparent;
+}
+
+.whiteLetters {
+  color: white;
+}
+
+.marginBottm {margin-bottom: 5rem;}

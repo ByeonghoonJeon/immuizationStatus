@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trochut&family=Vollkorn:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nathan Jeon</title>
+</head>
+
+<body>
+    <div class="section1 container-fluid px-0 py-5">
+        <h1 class="mt-5 text-center headerTitle">Immunization Status in South Korea</h1>
+        <div class="row justify-content-end">
+            <div class="col-5 align-self-center">
+                <div class="resultShow pt-5 pb-5">
+                    <h2 class="totalImmunization text-center">Immunization Status</h2>
+                    <h4 class="atThisPoint ml-5 mt-5">At this point,</h4>
+                    <h1 class="immunizedNumber"></h1>
+                    <div class="progress progress-striped mx-auto">
+                        <span class="percentageBar"></span>
+                    </div>
+                    <h4 class="ofPopulation text-end mr-5 mt-5">of population has been fully immunized.</h4>
+                    <h1 class="text-center my-5">- - - - -</h1>
+                    <h2 class="herdImmunity text-center">Herd Immunity in Korea</h2>
+                    <h4 class="atThisPoint2 ml-5 mt-5">At this point, we are</h4>
+                    <h1 class="herdImmunityNumber"></h1>
+                    <div class="progress progress-striped mx-auto">
+                        <span class="herdImmunityPercentageBar"></span>
+                    </div>
+                    <h4 class="ofHerdImmunity text-end mr-5 mt-5">to the herd immunity.</h4>
+                </div>
+                <div class="resultShow collapse">
+                    <h1 class="regionDetail">Details at the selected date by region.</h1>
+                </div>
+            </div>
+            <div class="col-6 align-self-center px-0">
+                <div class="window pt-5">
+                    <h2 class="header">Current Vaccination Rate in Republic of Korea</h2>
+                    <h4 class="headerDate mb-5">text</h4>
+                    <div class="row justify-content-center">
+                        <div class="col pr-0">
+                            <form class="dateForm" onsubmit="event.preventDefault();formOnSubmit(event)">
+                                <input class="dateInput" id="queryDate" name=queryDate type="date" value=""><Br>
+                                <button class="btn btn-outline-light mt-5 btn-lg" id="submitButton" type="submit">Query
+                                    <strong>>></strong></button>
+
+                            </form>
+                        </div>
+                        <div class="results col align-self-center text-right">
+                            <h3 class="result_1 newlyVaccinated"></h3>
+                            <h5 class="currentDate"></h5>
+                            <h3 class="numberFont1 todayTotal" style="display: inline-block"></h3>
+                            <h3 class="result_1 ml-4" style="display: inline-block">Total</h3><br>
+                            <h5 class="numberFont1 todayFirst" style="display: inline-block"></h5>
+                            <h5 class="result_1 ml-4" style="display: inline-block">First Dose</h5><br>
+                            <h5 class="numberFont1 todaySecond" style="display: inline-block"></h5>
+                            <h5 class="result_1 ml-4 mb-5" style="display: inline-block">Fully Vaccinated</h5><Br>
+                            <h1>----------</h1>
+                            <h3 class="result_1 mt-5">Accumulated Performance</h3>
+                            <h5 class="accumulateDate"></h5>
+                            <h3 class="numberFont1 accumulatedSecondShot" style="display: inline-block;"></h3>
+                            <h3 class="result_1 ml-4" style="display: inline-block">Fully vaccinated</h3><br>
+
+                            <h3 class="numberFont1 accumulatedFirstShot" style="display: inline-block"></h3>
+                            <h3 class="result_1 ml-4 mb-5" style="display: inline-block">First Dose</h3>
+                            <br><br><br><br><br>
+
+                        </div>
+                        <p class="information">* Data is being updated everyday at 9.35am, Korea time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2 container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-4 text-center">
+                <i class="fas fa-users"></i>
+                <h3 class="herdImmunity mb-5">What is herd immunity?</h3>
+                <h5 class="whiteLetters">Herd immunity can be achieved when large population is immune to certain
+                    disease.</h5>
+            </div>
+            <div class="col-4 text-center marginBottm">
+                <i class="fas fa-user-shield"></i>
+                <h3 class="mb-5 herdImmunity">How to achieve?</h3>
+                <h5 class="mb-0 whiteLetters">Many scientists anticipate the herd immunity will be achieved when 70 % of
+                    population is immune to COVID-19.</h5>
+            </div>
+        </div>
+    </div>
+    <div class="bottomEnd text-center">
+        <a href="https://github.com/ByeonghoonJeon"><i class="fab fa-github mt-3"></i></a>
+        <a href="https://www.linkedin.com/in/nathan-jeon-4765a4207/"><i class="fab fa-linkedin-in"></i></a><br>
+        <p class="mb-0" style="color: white;">© Copyright 2021 Nathan Jeon (Byeonghoon Jeon)</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="scripts\main.js"></script>
+</body>
+
+</html>
