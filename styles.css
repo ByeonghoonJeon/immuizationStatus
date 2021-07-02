@@ -224,3 +224,7 @@ body {
 .fab:hover {
   color: wheat;
 }
+
+.divide{
+  margin-right: 20px;
+}
