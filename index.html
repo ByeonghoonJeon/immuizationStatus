@@ -23,62 +23,87 @@
 </head>
 
 <body>
-    <div class="section1 container-fluid px-0 py-5">
+    <div class="section1 container-fluid py-5">
         <h1 class="mt-5 text-center headerTitle">Immunization Status in South Korea</h1>
-        <div class="row justify-content-end">
-            <div class="col-5 align-self-center">
-                <div class="resultShow pt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 align-self-center">
+                <div class="resultShow pt-5 pb-5 mb-0">
                     <h2 class="totalImmunization text-center">Immunization Status</h2>
                     <h4 class="atThisPoint ml-5 mt-5">At this point,</h4>
-                    <h1 class="immunizedNumber"></h1>
+                    <h1 class="immunizedNumber">5%</h1>
                     <div class="progress progress-striped mx-auto">
                         <span class="percentageBar"></span>
                     </div>
-                    <h4 class="ofPopulation text-end mr-5 mt-5">of population has been fully immunized.</h4>
-                    <h1 class="text-center my-5">- - - - -</h1>
+                    <h4 class="ofPopulation text-end mr-5 mt-5">of population has been <br>fully immunized.</h4>
+                    <h1 class="text-center">- - - - - - -</h1>
                     <h2 class="herdImmunity text-center">Herd Immunity in Korea</h2>
                     <h4 class="atThisPoint2 ml-5 mt-5">At this point, we are</h4>
-                    <h1 class="herdImmunityNumber"></h1>
+                    <h1 class="herdImmunityNumber">5%</h1>
                     <div class="progress progress-striped mx-auto">
                         <span class="herdImmunityPercentageBar"></span>
                     </div>
                     <h4 class="ofHerdImmunity text-end mr-5 mt-5">to the herd immunity.</h4>
                 </div>
-                <div class="resultShow collapse">
-                    <h1 class="regionDetail">Details at the selected date by region.</h1>
-                </div>
             </div>
-            <div class="col-6 align-self-center px-0">
-                <div class="window pt-5">
+            <div class="col-sm-6 align-self-center">
+                <div class="window pt-5 pb-5">
                     <h2 class="header">Current Vaccination Rate in Republic of Korea</h2>
-                    <h4 class="headerDate mb-5">text</h4>
-                    <div class="row justify-content-center">
-                        <div class="col pr-0">
+                    <h4 class="headerDate">text</h4>
+                    <div class="row justify-content-center row-no-gutters">
+                        <div class="col-sm-6 text-center">
                             <form class="dateForm" onsubmit="event.preventDefault();formOnSubmit(event)">
                                 <input class="dateInput" id="queryDate" name=queryDate type="date" value=""><Br>
-                                <button class="btn btn-outline-light mt-5 btn-lg" id="submitButton" type="submit">Query
+                                <button class="btn btn-outline-light btn-lg" id="submitButton" type="submit">Query
                                     <strong>>></strong></button>
-
                             </form>
                         </div>
-                        <div class="results col align-self-center text-right">
+                        <div class="results col-sm-6 text-right">
                             <h3 class="result_1 newlyVaccinated"></h3>
                             <h5 class="currentDate"></h5>
-                            <h3 class="numberFont1 todayTotal" style="display: inline-block"></h3>
-                            <h3 class="result_1 ml-4" style="display: inline-block">Total</h3><br>
-                            <h5 class="numberFont1 todayFirst" style="display: inline-block"></h5>
-                            <h5 class="result_1 ml-4" style="display: inline-block">First Dose</h5><br>
-                            <h5 class="numberFont1 todaySecond" style="display: inline-block"></h5>
-                            <h5 class="result_1 ml-4 mb-5" style="display: inline-block">Fully Vaccinated</h5><Br>
+                            <div class="row">
+                                <div class="col-7 px-0">
+                                    <h4 class="result_1">Total</h4>
+                                </div>
+                                <div class="col">
+                                    <h4 class="numberFont1 todayTotal"></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7 px-0">
+                                    <p class="result_1">First Dose</p>
+                                </div>
+                                <div class="col">
+                                    <p class="numberFont1 todayFirst"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7 px-0">
+                                    <p class="result_1">Fully Vaccinated</p>
+                                </div>
+                                <div class="col">
+                                    <p class="numberFont1 todaySecond"></p>
+                                </div>
+                            </div>
                             <h1>----------</h1>
-                            <h3 class="result_1 mt-5">Accumulated Performance</h3>
+                            <h3 class="result_1 accumulatedPerformance">Accumulated Performance</h3>
                             <h5 class="accumulateDate"></h5>
-                            <h3 class="numberFont1 accumulatedSecondShot" style="display: inline-block;"></h3>
-                            <h3 class="result_1 ml-4" style="display: inline-block">Fully vaccinated</h3><br>
+                            <div class="row">
+                                <div class="col-7 px-0">
+                                    <h4 class="result_1">Fully vaccinated</h4>
+                                </div>
+                                <div class="col">
+                                    <h4 class="numberFont1 accumulatedSecondShot"></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7 px-0">
+                                    <h5 class="result_1">First Dose</h5>
+                                </div>
+                                <div class="col">
+                                    <h5 class="numberFont1 accumulatedFirstShot"></h5>
+                                </div>
+                            </div>
 
-                            <h3 class="numberFont1 accumulatedFirstShot" style="display: inline-block"></h3>
-                            <h3 class="result_1 ml-4 mb-5" style="display: inline-block">First Dose</h3>
-                            <br><br><br><br><br>
 
                         </div>
                         <p class="information">* Data is being updated everyday at 9.35am, Korea time</p>
@@ -87,19 +112,20 @@
             </div>
         </div>
     </div>
+
     <div class="section2 container-fluid">
         <div class="row justify-content-around">
-            <div class="col-4 text-center">
+            <div class="col-sm-6 text-center">
                 <i class="fas fa-users"></i>
-                <h3 class="herdImmunity mb-5">What is herd immunity?</h3>
-                <h5 class="whiteLetters">Herd immunity can be achieved when large population is immune to certain
-                    disease.</h5>
+                <h5 class="herdImmunity mb-2">What is herd immunity?</h5>
+                <p class="whiteLetters">Herd immunity can be achieved when large population is immune to certain
+                    disease.</p>
             </div>
-            <div class="col-4 text-center marginBottm">
+            <div class="col-sm-6 text-center">
                 <i class="fas fa-user-shield"></i>
-                <h3 class="mb-5 herdImmunity">How to achieve?</h3>
-                <h5 class="mb-0 whiteLetters">Many scientists anticipate the herd immunity will be achieved when 70 % of
-                    population is immune to COVID-19.</h5>
+                <h5 class="herdImmunity mb-2">How to achieve?</h5>
+                <p class="mb-5 whiteLetters">Many scientists anticipate the herd immunity will be achieved when 70 % of
+                    population is immune to COVID-19.</p>
             </div>
         </div>
     </div>
@@ -109,8 +135,7 @@
         <p class="mb-0" style="color: white;">© Copyright 2021 Nathan Jeon (Byeonghoon Jeon)</p>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -132,5 +157,6 @@
         crossorigin="anonymous"></script>
     <script src="scripts\main.js"></script>
 </body>
+
 
 </html>
