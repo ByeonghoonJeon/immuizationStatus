@@ -1,12 +1,14 @@
 body {
   background-image: url(img/backgroundImg.jpg);
-  background-size: cover;
+  background-size: contain;
   font-family: "Vollkorn", serif;
 }
 
 .headerTitle {
-  font-size: 5rem;
+  font-size: 2.2rem;
   color: rgb(248, 212, 144);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .section1 {
@@ -14,118 +16,39 @@ body {
   background-size: cover;
   height: max-content;
 }
-.navbar {
-  background: rgb(
-    61,
-    58,
-    58
-  ); /* Fallback for older browsers without RGBA-support */
-  background: rgba(243, 239, 239, 0.5);
-}
 
-.fa-github,
-.fa-linkedin-in {
-  color: rgb(22, 33, 62);
-  font-size: 2rem;
-  margin-right: 10px;
-  margin-left: 10px;
-  background: transparent;
-}
-
-.fab:hover {
-  color: wheat;
-}
-
-.empty-sm {
-  height: 5rem;
-}
-
-.immunizedNumber,
-.herdImmunityNumber {
-  font-size: 8rem;
-  text-align: center;
-}
-
-.window {
-  border-radius: 5px;
-  margin-top: 5vh;
-  margin-right: 5vw;
-  margin-bottom: 10vh;
-  background: rgba(22, 33, 62, 0.9);
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
-}
 .resultShow {
   color: white;
   border-radius: 5px;
   margin-top: 5vh;
-  margin-right: 5vw;
   margin-bottom: 10vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
 }
 
+.herdImmunity,
+.totalImmunization,
 .header {
-  color: white;
-  text-align: center;
-}
-
-.headerDate {
   color: wheat;
+  font-size: 1.7rem;
+}
+
+.atThisPoint,
+.atThisPoint2,
+.ofPopulation,
+.ofHerdImmunity {
+  font-size: 1.3rem;
+}
+
+.immunizedNumber,
+.herdImmunityNumber {
+  font-size: 4rem;
   text-align: center;
-}
-
-.dateForm {
-  margin-top: 20px;
-  margin-left: 90px;
-}
-
-.dateInput {
-  text-align: center;
-}
-
-#submitButton {
-  border: solid;
-}
-
-.results {
-  color: white;
-  margin-right: 100px;
-}
-
-.result_1 {
-  margin-top: 20px;
-}
-
-.numberFont1 {
-  font-family: "Trochut", cursive;
-  color: wheat;
-}
-
-.information {
-  color: rgb(177, 170, 170);
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.bottomEnd {
-  background-color: grey;
-  box-sizing: content-box;
-}
-
-#submitButton {
-  border-radius: 20px;
-}
-
-.accumulatedSecondShot {
-  color: #ff0000;
-  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .progress {
@@ -171,9 +94,94 @@ body {
   animation: move 2s linear infinite;
 }
 
-.herdImmunity,
-.totalImmunization {
+.window {
+  color: white;
+  border-radius: 5px;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  background: rgba(22, 33, 62, 0.9);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+  /* background: rgba(22, 33, 62, 0.9);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -5px 11px 17px -16px rgba(0, 0, 0, 0.32); */
+}
+
+.header {
+  text-align: start;
+  margin-left: 20px;
+}
+
+.headerDate {
+  color: white;
+  text-align: start;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+.dateForm {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 3rem;
+  width: auto;
+}
+
+.dateInput {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#submitButton {
+  border: solid;
+}
+
+.newlyVaccinated,
+.accumulatedPerformance {
+  font-size: 1.4rem;
   color: wheat;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.currentDate,
+.accumulateDate {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.result_1 {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.row_height,
+.col_height {
+  height: min-content !important;
+}
+
+.todayTotal,
+.todayFirst,
+.todaySecond,
+.accumulatedSecondShot,
+.accumulatedFirstShot {
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.accumulatedSecondShot {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.information {
+  color: rgb(177, 170, 170);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
 }
 
 .section2 {
@@ -183,9 +191,9 @@ body {
 .fa-users,
 .fa-user-shield {
   color: #eadea6;
-  font-size: 5rem;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   margin-right: 10px;
   margin-left: 10px;
   background: transparent;
@@ -195,4 +203,24 @@ body {
   color: white;
 }
 
-.marginBottm {margin-bottom: 5rem;}
+.bottomEnd {
+  background-color: grey;
+  box-sizing: content-box;
+}
+
+.fa-github,
+.fa-linkedin-in {
+  color: rgb(22, 33, 62);
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: transparent;
+}
+
+#submitButton {
+  border-radius: 20px;
+}
+
+.fab:hover {
+  color: wheat;
+}
