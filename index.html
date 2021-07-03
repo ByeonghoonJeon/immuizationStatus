@@ -26,7 +26,7 @@
     <div class="section1 container-fluid py-5">
         <h1 class="mt-5 text-center headerTitle">Immunization Status in South Korea</h1>
         <div class="row justify-content-center">
-            <div class="col-sm-6 align-self-center">
+            <div class="col-md-6 align-self-center">
                 <div class="resultShow pt-5 pb-5 mb-0">
                     <h2 class="totalImmunization text-center">Immunization Status</h2>
                     <h4 class="atThisPoint ml-5 mt-5">At this point,</h4>
@@ -45,59 +45,59 @@
                     <h4 class="ofHerdImmunity text-end mr-5 mt-5">to the herd immunity.</h4>
                 </div>
             </div>
-            <div class="col-sm-6 align-self-center">
-                <div class="window pt-5 pb-5">
+            <div class="col-md-6 align-self-top">
+                <div class="window pt-5 pb-5 pr-lg-4 pl-lg-4">
                     <h2 class="header">Current Vaccination Rate in Republic of Korea</h2>
                     <h4 class="headerDate">text</h4>
                     <div class="row justify-content-center row-no-gutters">
-                        <div class="col-sm-6 text-center">
+                        <div class="col-sm-6 col-lg-4 text-center text-lg-right">
                             <form class="dateForm" onsubmit="event.preventDefault();formOnSubmit(event)">
                                 <input class="dateInput" id="queryDate" name=queryDate type="date" value=""><Br>
                                 <button class="btn btn-outline-light btn-lg" id="submitButton" type="submit">Query
                                     <strong>>></strong></button>
                             </form>
                         </div>
-                        <div class="results col-sm-6 text-right">
-                            <h3 class="result_1 newlyVaccinated"></h3>
+                        <div class="results col-sm-6 col-lg-8 text-right">
+                            <h3 class="result_1 newlyVaccinated">Current Status</h3>
                             <h5 class="currentDate"></h5>
                             <div class="row">
-                                <div class="col-7 px-0">
-                                    <h5 class="result_1">Total</h5>
+                                <div class="col-7 col-sm-6 col-md-12 col-lg-7">
+                                    <h5 class="result_1 totalEm">Total</h5>
                                 </div>
                                 <div class="col">
                                     <h5 class="numberFont1 todayTotal"></h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-7 px-0">
-                                    <p class="result_1">First Dose</p>
+                                <div class="col-7 col-sm-6 col-md-12 col-lg-7">
+                                    <p class="result_1 firstDose">First Dose</p>
                                 </div>
                                 <div class="col">
                                     <p class="numberFont1 todayFirst"></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-7 px-0">
-                                    <p class="result_1">Fully Vaccinated</p>
+                                <div class="col-7 col-sm-6 col-md-12 col-lg-7">
+                                    <p class="result_1 firstDose">Fully Vaccinated</p>
                                 </div>
                                 <div class="col">
                                     <p class="numberFont1 todaySecond"></p>
                                 </div>
                             </div>
-                            <h1 class="divide">----------</h1>
+                            <h1 class="divide">-----</h1>
                             <h3 class="result_1 accumulatedPerformance">Accumulated Performance</h3>
                             <h5 class="accumulateDate"></h5>
-                            <div class="row">
-                                <div class="col-7 px-0">
-                                    <h5 class="result_1">Fully vaccinated</h5>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-7 col-sm-6 col-md-12 col-lg-7">
+                                    <h5 class="result_1 fullyVaccinated">Fully vaccinated</h5>
                                 </div>
-                                <div class="col">
+                                <div class="col align-items-center">
                                     <h5 class="numberFont1 accumulatedSecondShot"></h5>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-7 px-0">
-                                    <h5 class="result_1">First Dose</h5>
+                                <div class="col-7 col-sm-6 col-md-12 col-lg-7">
+                                    <h5 class="result_1 fullyVaccinated">First Dose</h5>
                                 </div>
                                 <div class="col">
                                     <h5 class="numberFont1 accumulatedFirstShot"></h5>
@@ -115,13 +115,13 @@
 
     <div class="section2 container-fluid">
         <div class="row justify-content-around">
-            <div class="col-sm-6 text-center">
+            <div class="col-lg-6 text-center">
                 <i class="fas fa-users"></i>
                 <h5 class="herdImmunity mb-2">What is herd immunity?</h5>
                 <p class="whiteLetters">Herd immunity can be achieved when large population is immune to certain
                     disease.</p>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col-lg-6 text-center">
                 <i class="fas fa-user-shield"></i>
                 <h5 class="herdImmunity mb-2">How to achieve?</h5>
                 <p class="mb-5 whiteLetters">Many scientists anticipate the herd immunity will be achieved when 70 % of
